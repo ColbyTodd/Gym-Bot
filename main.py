@@ -130,12 +130,12 @@ def book_gym(time):
 
     #clicks on show courses for workout session
     driver.find_element_by_xpath(
-        "/html/body/div[1]/div[2]/div[2]/div[2]/div/div/div[1]/div[3]/div/table/tbody/tr[7]/td/div[3]/span[1]/a").click()
+        "/html/body/div[1]/div[2]/div[2]/div[2]/div/div/div[1]/div[3]/div/table/tbody/tr[6]/td/div[3]/span[1]/a").click()
 
     #waits until workout sessions are shown
     WebDriverWait(driver, 10).until(
         EC.presence_of_element_located((By.XPATH,
-                                        "/html/body/div[1]/div[2]/div[2]/div[2]/div/div/div[1]/div[3]/div/table/tbody/tr[7]/td/div[3]/div/div/div[2]/div[2]/span/a[4]")))
+                                        "/html/body/div[1]/div[2]/div[2]/div[2]/div/div/div[1]/div[3]/div/table/tbody/tr[6]/td/div[3]/div/div/div[2]/div[2]/span/a[2]")))
     
     if time < 16:
         #clicks on page 4
